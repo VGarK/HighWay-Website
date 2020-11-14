@@ -1,0 +1,526 @@
+
+/*MAIN*/
+body {
+    background-color: #white;
+    color: #black;
+	/*This allows some cool font for the main info parts*/
+    font: normal 15px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif; 
+}
+p {
+    line-height: 20px;
+    margin-bottom: 25px;
+	/*General paragraph parameters so it looks better for the user :)*/
+}
+h1 { /*logo of the website (with cool font ofc)*/
+    font-family: 'Crete Round', serif;
+    color: #black;
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+h2 {
+    font-weight: 300;
+    color: #black;
+    font-size: 55px;
+    text-transform: uppercase;
+    text-align: right;
+    margin-bottom: 20px;
+}
+h3 {
+    font-size: 30px;
+    color: #black;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h4 {
+    font-size: 24px;
+    color: #black;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+h5 {
+    font-size: 15px;
+    color: #black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+
+
+/*MISELANIOUS*/
+a { /*for a elements, no decoration and just black, cuse we like it simple*/
+    text-decoration: none;
+    color: #black;
+}
+a:hover { /*but we like it red cuse it looks dangerous and wild*/
+    color: #FF0000;
+}
+strong {
+    font-weight: bold;
+}
+small { /*used for a concrete part that needed smaller text*/
+    font-size: 15px;
+    color: #black;
+    font-style: italic;
+}
+.clear { /*cretes spaces between sections*/
+    clear: both;
+}
+.wrapper {
+    margin: 0 auto; 
+    padding: 0 10px;
+    width: 1000px;
+	display: block;
+}
+
+.color {
+    color: #b30000;
+}
+
+.test_1 {
+  padding: 16px;
+}
+
+.static_bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.test-1 + .static_bar {
+  padding-top: 102px;
+}
+
+.fixed_bar {
+	position: fixed; 
+	top: 0;
+}
+
+.line {
+	height: 12px;
+	width: 100%;
+	background-color: #b30000;	
+}
+
+.slim-line {
+	margin: auto;
+	height: 1px;
+	width: 61%;
+	margin-bottom: 15px;
+	background-color: #b30000;	
+}
+
+
+
+
+/*TEST SPACE*/
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+	background: #b30000 url('Styles/Resources/Images/gif2.gif') no-repeat center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 70%;
+	
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+/*HEADER*/
+
+header {
+    height: 100px;
+}
+header h1 {
+    float: left;
+    margin-top: 15px;
+}
+header h1 .color {
+    color: #b30000;
+}
+header nav {
+    float: right;
+}
+header nav ul li {
+    float: left;
+    display: inline-block;
+    margin-top: 35px;
+}
+header nav ul li a {
+    color: #444;
+    text-transform: uppercase; /*This saved me from typing again everything*/
+    font-weight: bold;
+    display: block;
+    margin-right: 20px;
+}
+
+
+
+/*INTRO*/
+#cool-image {
+    height: 580px;
+    padding-top: 1px;
+    background: #ffe6e6 url('Styles/Resources/Images/highway_main.jpg') no-repeat center;
+	position: relative;
+    text-align: center;
+    color: #000;
+}
+#cool-image h2 {
+    margin: 180px 0 40px 0;
+}
+.button-intro {
+    display: block;
+    text-align: center;
+    background: #b30000;
+    border-radius: 3px;
+    color: #fff;
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+.button-intro:hover {
+    background-color: #FF0000; /*red cuse its wild and free*/
+    color: #fff;
+}
+
+
+
+
+/*TUTORIAL_STEPS*/
+#steps ul {
+    margin: 5px 0; /*distance to the tittle of the section*/
+}
+#steps ul li ,.step-1,.step-2,.step-3{
+    width: 300px;
+    padding-top: 50px;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+	display: inline-block;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	background: #ffe6e6
+	
+	
+}
+/*
+#steps ul li ,.step-4,.step-5,.step-6{
+    width: 300px;
+	padding-top: 10px;
+
+    padding-bottom: 140px;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+	display: inline-block;
+	background: #ffe6e6
+}
+*/
+
+
+/*REVIEWS*/
+
+#tabla{
+	margin-top:0px;
+	margin-bottom:auto;
+	margin-left:auto;
+	margin-right:auto;
+	width:80%;
+	text-align: center;
+	min-height:50px;
+	background-color:##ffe6e6;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.titulo_tabla{
+	background:#ffe6e6;
+	padding-top: 10px;
+	height:25px;
+	color:#FFFFFF;
+	font-weight:bold;
+	font-size:14px;
+	border:#000000 1px solid;
+}
+.contenedor_opciones{
+	width:500px;
+	border:#b30000 1px solid;
+	min-height:30px;
+	text-align:center;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px;
+}
+
+.clear{
+	clear:both;
+}
+
+.union{
+	 margin: auto;
+	 width: 60%;
+}
+
+
+/*QUOTESSSSS*/
+.quotes div{
+    padding: 25px;
+    max-width: 300px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+	margin: 0 auto;
+}
+.quotes div:before,
+.quotes div:after{
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+}
+.quotes div:before{
+    content: '\201d';
+    top: 0; left: 10px;
+	color: #b30000;
+}
+.quotes div:after{
+    content: '\201c';
+    bottom: 0; right: 10px;
+	color: #b30000;
+}
+
+
+/*IMAGES*/
+.icon-imag{
+/*Centrates the image*/
+display: block;
+margin-left: auto;
+margin-right: auto;
+/*dimensionates the image*/
+height: 100px;
+width: 100x;
+}
+
+.icon-imag-terms{
+/*Centrates the image*/
+display: block;
+margin-left: auto;
+margin-right: auto;
+/*dimensionates the image*/
+height: 50px;
+width: 50x;
+}
+
+.morgan_really_is_beautiful {
+   padding:1px;
+   /*border:1px solid #021a40;*/
+   background-color:#fffff;
+   height: 30%;
+   width: 20%;
+}
+
+/*INTRO*/
+#intro {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#intro h3 {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 400px;
+    border-bottom: 1px solid #b30000;
+    padding: 0 0 20px 0;
+}
+
+#intro-video {
+    background-color:  #ffe6e6;
+    padding: 60px 0;
+    text-align: center;
+}
+#intro-video h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #b30000;
+    padding: 0 0 20px 0;
+}
+#intro-video a img {
+    margin: 20px 0;
+}
+
+
+/*FEATURED*/
+#featured {
+    padding: 40px 0;
+    text-align: center;
+	
+}
+#featured article {
+    width: 460px;
+    height: 270px;
+    float: left;
+    background-color: #ffe6e6;
+	margin-top: 15px;
+	margin-right: 20px;
+}
+#featured article:first-child {
+    margin-right: 20px;
+}
+
+article h4 {
+    border-bottom: 1px solid #b30000;
+    padding-bottom: 20px;
+}
+.button-yeboi {
+    border: 1px solid #b30000;
+    color: #b30000;
+    padding: 6px 20px;
+    border-radius: 3px;
+}
+.button-yeboi:hover {
+    background-color: #b30000;
+    color: #fff;
+}
+
+/*REGISTER_SPAM*/
+#register-intro {
+    padding: 60px 0;
+    text-align: center;
+}
+#register-intro h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #b30000;
+    padding: 0 0 20px 0;
+}
+.button-register {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #b30000;
+    color: #b30000;
+    border-radius: 3px;
+    width: 180px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+}
+.button-register:hover {
+    background-color: #b30000;
+    color: #fff;
+}
+.center-java {
+	width: 13%;
+	padding: 10px;
+	display: inline-block;
+	margin: 0 auto; 
+	padding: 0 10px;
+	display: block;
+}
+
+
+
+/*FOOTER*/
+footer {
+    padding: 5px 0;
+    background-color: #b30000;
+}
+#info {
+    width: 380px;
+    /*float: left;*/
+    margin-top: 5px;
+	margin-bottom: 5px;
+	margin: 0 auto; /*centrates text*/
+	text-align: center
+}
+#info a{
+   text-decoration: none;
+    color: #fff;
+}
+
+#info a:hover { 
+    color: #000;
+}
+
+
+
+
+/* for testing purposes hehe*/
+#links {
+    width: 300px;
+    float: right;
+	display: inline-block;
+}
+
+#links a {
+ text-decoration: none;
+    color: #fff;
+}
+
+
+#links a:hover { 
+    color: #000;
+}
+
+
+#links ul {
+    width: 150px;
+    float: left;
+    margin-left: 20px;
+	list-style-type: none;
+}
+#links ul li {
+    margin: 10px 0;
+	
+}
+
+
+
+
+
+
+/* TERMS OF SERVICE AND PRIVACY */
+#terms {
+    background-color:  #ffe6e6;
+    padding: 60px 0;
+    
+	text-align: justify;
+	text-justify: inter-word;
+}
+#terms h1 {
+   text-align: center;
+}
+
+#terms h3 {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 400px;
+    border-bottom: 1px solid #b30000;
+    padding: 0 0 20px 0;
+}
+#terms a img {
+    margin: 20px 0;
+}
+#terms a{
+   text-decoration: none;
+    color: #b30000;
+}
+#terms ul {
+	list-style-type:none;
+}
+
